@@ -24,6 +24,14 @@ return [
         'token' => env('POSTMARK_TOKEN'),
     ],
 
+    'news'=>[
+
+        'base_uri'=>env('Newsapi_Base_URI'),
+        'country'=>env('NewsApi_Country'),
+        'api_key'=>env('NewsApi_key'),
+
+    ],
+
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
