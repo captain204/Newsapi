@@ -22,7 +22,7 @@ trait ConsumeExternalServices
         $response = $client->request($method, $requestUrl,[
             'query' => $queryParams,
             'form_param'=> $formsParams,
-            'headers'=>$headers
+            'headers'=>$headers,
         ]);
 
         $response = $response->getBody()->getContents();
