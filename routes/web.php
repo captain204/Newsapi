@@ -13,10 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/us','CountryController@unitedStates')->name('us');
+Route::get('/uk','CountryController@unitedKingdom')->name('uk');
+Route::get('/germany','CountryController@germany')->name('germany');
+Route::get('/canada','CountryController@canada')->name('canada');
+Route::get('/nz','CountryController@Newzealand')->name('nz');
